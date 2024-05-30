@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-30T12:43:42.228320" rpa="false" schemaversion="5">
+<suite id="s1" name="Test-Robot" source="C:\Users\User\OneDrive\เอกสาร\GitHub\test-robot\test-robot.robot">
+<test id="s1-t1" name="Search" line="19">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-05-30T12:43:42.389397" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-30T12:43:42.389397" elapsed="5.800220"/>
+</kw>
+<status status="PASS" start="2024-05-30T12:43:42.388360" elapsed="5.802267"/>
+</kw>
+<kw name="ค้นหาตาม keywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-05-30T12:43:48.191825" level="INFO">Typing text 'Podcasts ไทย' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${expected_result}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-30T12:43:48.191825" elapsed="0.085375"/>
+</kw>
+<kw name="Submit Form" owner="Selenium2Library">
+<msg time="2024-05-30T12:43:48.278210" level="INFO">Submitting form 'None'.</msg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-30T12:43:48.278210" elapsed="0.142935"/>
+</kw>
+<status status="PASS" start="2024-05-30T12:43:48.190627" elapsed="0.230518"/>
+</kw>
+<kw name="รอผลลัพธ์">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-30T12:43:48.422152" elapsed="0.950338"/>
+</kw>
+<status status="PASS" start="2024-05-30T12:43:48.422152" elapsed="0.950338"/>
+</kw>
+<status status="PASS" start="2024-05-30T12:43:42.388360" elapsed="6.985128"/>
+</test>
+<status status="PASS" start="2024-05-30T12:43:42.230351" elapsed="7.144141"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Robot">Test-Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
